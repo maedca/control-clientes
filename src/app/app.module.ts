@@ -17,6 +17,7 @@ import {RegistroComponent} from './componentes/registro/registro.component';
 import {ConfiguracionComponent} from './componentes/configuracion/configuracion.component';
 import {NoEncontradoComponent} from './componentes/no-encontrado/no-encontrado.component';
 import {PiePaginaComponent} from './componentes/pie-pagina/pie-pagina.component';
+import {ClienteService} from "./servicios/cliente.service";
 
 @NgModule({
     declarations: [
@@ -40,7 +41,7 @@ import {PiePaginaComponent} from './componentes/pie-pagina/pie-pagina.component'
         FormsModule,
         FlashMessagesModule.forRoot(),//inicializa el modulo
     ],
-    providers: [],
+    providers: [ClienteService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
