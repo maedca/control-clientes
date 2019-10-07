@@ -21,7 +21,10 @@
                 </div>
             </li>
           <li class="nav-item" *ngIf="!isLoggedIn">
-            <a routerLink="/login" class="nav-link"><i class="fas fa-user"></i> Login</a>
+            <a routerLink="/login" class="nav-link" routerLinkActive="router-link-active"><i class="fas fa-user"></i> Login</a>
+          </li>
+          <li class="nav-item" *ngIf="!isLoggedIn">
+            <a routerLink="/registrarse" class="nav-link" routerLinkActive="router-link-active"><i class="fas fa-user"></i> Registrarse</a>
           </li>
           <li class="nav-item" *ngIf="isLoggedIn">
             <a href=""  style="cursor:pointer" (click)="logout()" class="nav-link"><i class="fas fa-user-times"></i> Salir</a>
